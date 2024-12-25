@@ -479,17 +479,7 @@ img {
   overflow-x: auto; /* Aktifkan scroll horizontal */
   gap: 1.5rem;
   padding-bottom: 1rem;
-scroll-behavior: smooth; /* Smooth scrolling sebagai fallback */
-  animation: scroll-horizontal 10s linear infinite; /* Animasi otomatis */
-}
-
-@keyframes scroll-horizontal {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); /* Sesuaikan jarak scroll */
-  }
+  scroll-behavior: smooth;
 }
 
 .skills__item {

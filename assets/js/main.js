@@ -660,10 +660,22 @@ function initializeSkillsSlider() {
   sliders.forEach((slider) => {
     let scrollAmount = 2;
     let isAtEnd = false;
+    let userInteracted = false; // Menandakan apakah pengguna berinteraksi
+
+    // Deteksi scroll manual oleh pengguna
+    slider.addEventListener("scroll", () => {
+      userInteracted = true;
+      setTimeout(() => {
+        userInteracted = false; // Reset setelah 1 detik
+      }, 1000);
+    });
 
     function scrollAnimation() {
-      console.log("Slider is scrolling...", slider.scrollLeft); // Debugging
-      slider.scrollLeft += isAtEnd ? -scrollAmount : scrollAmount;
+      if (!isAtEnd) {
+        slider.scrollLeft += scrollAmount;
+      } else {
+        slider.scrollLeft -= scrollAmount;
+      }
 
       if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
         isAtEnd = true;
@@ -677,14 +689,6 @@ function initializeSkillsSlider() {
     scrollAnimation();
   });
 }
-
-
-if (!("scrollBehavior" in document.documentElement.style)) {
-  import(
-    "https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-  ).then((smoothscroll) => smoothscroll.polyfill());
-}
-
 
 document.addEventListener("DOMContentLoaded", loadContent);
 
