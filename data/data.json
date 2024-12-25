@@ -1,0 +1,347 @@
+{
+  "header": {
+    "logo": "Ferdy",
+    "menu": [
+      { "text": "Home", "link": "#home", "icon": "uil uil-estate" },
+      { "text": "About", "link": "#about", "icon": "uil uil-user" },
+      { "text": "Skills", "link": "#skills", "icon": "uil uil-file-alt" },
+      {
+        "text": "Services",
+        "link": "#services",
+        "icon": "uil uil-briefcase-alt"
+      },
+      { "text": "Portfolio", "link": "#portfolio", "icon": "uil uil-scenery" },
+      { "text": "Contact Me", "link": "#contact", "icon": "uil uil-message" }
+    ]
+  },
+  "home": {
+    "title": "Hi, I'm Ferdy",
+    "subtitle": "Web & Mobile App Developer",
+    "description": "Crafting seamless digital experiences through innovative web and mobile applications, with a focus on user-centric design and efficient technology.",
+    "img": "assets/img/profil.png",
+    "socials": [
+      {
+        "icon": "uil uil-linkedin-alt",
+        "link": "https://www.linkedin.com/in/mochamad-ferdy-fauzan"
+      },
+      {
+        "icon": "uil uil-instagram",
+        "link": "https://www.instagram.com/ferdf_"
+      },
+      { "icon": "uil uil-github-alt", "link": "https://github.com/frddyy" }
+    ]
+  },
+  "about": {
+    "img": "assets/img/about-2.png",
+    "description": "A developer and designer with a strong background in creating innovative web and mobile applications. Combining expertise in technology and design, I deliver user-centric solutions tailored to meet client needs.",
+    "info": [
+      { "title": "3+", "subtitle": "Years of Experience" },
+      { "title": "15+", "subtitle": "Completed Projects" },
+      { "title": "5+", "subtitle": "Tools & Technologies Mastered" }
+    ],
+    "cv": "assets/pdf/CV - Mochamad Ferdy Fauzan - Nov 2024.pdf"
+  },
+  "skills": [
+    {
+      "title": "Hard Skills",
+      "subtitle": "Proficient in technical tools and frameworks",
+      "skills": [
+        { "name": "HTML", "icon": "devicon-html5-plain colored" },
+        { "name": "CSS", "icon": "devicon-css3-plain colored" },
+        { "name": "JavaScript", "icon": "devicon-javascript-plain colored" },
+        { "name": "TypeScript", "icon": "devicon-typescript-plain colored" },
+        { "name": "React.js", "icon": "devicon-react-original colored" },
+        { "name": "Vue.js", "icon": "devicon-vuejs-plain colored" },
+        { "name": "Node.js", "icon": "devicon-nodejs-plain colored" },
+        { "name": "Java", "icon": "devicon-java-plain colored" },
+        { "name": "Spring Boot", "icon": "devicon-spring-plain colored" },
+        {
+          "name": "Python",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        { "name": "PostgreSQL", "icon": "devicon-postgresql-plain colored" },
+        { "name": "MySQL", "icon": "devicon-mysql-plain colored" },
+        { "name": "MongoDB", "icon": "devicon-mongodb-plain colored" },
+        { "name": "Electron", "icon": "devicon-electron-original colored" },
+        {
+          "name": "Streamlit",
+          "icon": "https://streamlit.io/images/brand/streamlit-mark-color.svg"
+        },
+        { "name": "Jupyter Notebook", "icon": "devicon-jupyter-plain colored" },
+        {
+          "name": "Postman",
+          "icon": "https://assets.getpostman.com/common-share/postman-logo-stacked.svg"
+        },
+        {
+          "name": "Figma",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+        }
+      ]
+    },
+    {
+      "title": "Soft Skills",
+      "subtitle": "Enhancing collaboration and leadership in projects",
+      "skills": [
+        { "name": "Leadership", "icon": "uil uil-users-alt" },
+        { "name": "Problem Solving", "icon": "uil uil-lightbulb-alt" },
+        { "name": "Time Management", "icon": "uil uil-clock" },
+        { "name": "Teamwork", "icon": "uil uil-user-arrows" },
+        { "name": "Adaptability", "icon": "uil uil-refresh" },
+        { "name": "Fast Learner", "icon": "uil uil-rocket" }
+      ]
+    }
+  ],
+  "qualification": {
+    "education": [
+      {
+        "title": "Applied Bachelor of Informatics Engineering",
+        "subtitle": "Politeknik Negeri Bandung",
+        "calendar": "2021 - Present"
+      },
+      {
+        "title": "Senior High School",
+        "subtitle": "SMA Negeri 1 Garut",
+        "calendar": "2018 - 2021"
+      }
+    ],
+    "work": [
+      {
+        "title": "Full Stack Developer",
+        "subtitle": "PT Padepokan Tujuh Sembilan",
+        "calendar": "Jun 2024 - Oct 2024"
+      },
+      {
+        "title": "Frontend Developer",
+        "subtitle": "PT Padepokan Tujuh Sembilan",
+        "calendar": "Jan 2024 - Feb 2024"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Web Development",
+      "description": [
+        "I create modern and responsive websites.",
+        "Integration with RESTful APIs and backend systems.",
+        "Full-stack development using React, Node.js, and databases.",
+        "Optimization for performance and cross-browser compatibility."
+      ],
+      "icon": "uil uil-browser"
+    },
+    {
+      "title": "Mobile App Development",
+      "description": [
+        "I develop fast and intuitive mobile applications.",
+        "Cross-platform app development using React Native.",
+        "Seamless integration with backend services.",
+        "Focus on clean code and scalability."
+      ],
+      "icon": "uil uil-mobile-android"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": [
+        "I design user-friendly and interactive interfaces.",
+        "Wireframing and prototyping with Figma.",
+        "Focus on improving user experience and usability.",
+        "Consistency in design across web and mobile platforms."
+      ],
+      "icon": "uil uil-palette"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Presence App - Attendance System",
+      "description": "A real-time attendance system with check-in/out and leave application features.",
+      "technologies": "React | React Native | Java Spring Boot | PostgreSQL | Redux",
+      "timeframe": "June 2024 - October 2024",
+      "images": [
+        "assets/img/portfolio/presence-app/4-dashboard-admin.png",
+        "assets/img/portfolio/presence-app/1-home.png",
+        "assets/img/portfolio/presence-app/2-leave.png",
+        "assets/img/portfolio/presence-app/3-apply-leave.png",
+        "assets/img/portfolio/presence-app/5-attendance-admin.png",
+        "assets/img/portfolio/presence-app/6-leaves-admin.png",
+        "assets/img/portfolio/presence-app/7-settings-admin.png",
+        "assets/img/portfolio/presence-app/8-admin-profile.png",
+        "assets/img/portfolio/presence-app/8-all-admin-superadmin.png",
+        "assets/img/portfolio/presence-app/9-all-company.png",
+        "assets/img/portfolio/presence-app/10-company-profile.png"
+      ],
+      "hasGithub": false
+    },
+    {
+      "title": "Coordinate Converter",
+      "description": "A tool for converting coordinates between DMS and Decimal Degrees formats.",
+      "technologies": "React | Node.js | Tailwind CSS | Jest",
+      "timeframe": "May 2024",
+      "images": [
+        "assets/img/portfolio/coordinate-converter/1.png",
+        "assets/img/portfolio/coordinate-converter/2.png",
+        "assets/img/portfolio/coordinate-converter/3.png",
+        "assets/img/portfolio/coordinate-converter/4.png",
+        "assets/img/portfolio/coordinate-converter/5.png"
+      ],
+      "hasGithub": true,
+      "github": "https://github.com/frddyy/coordinate-converter"
+    },
+    {
+      "title": "Recipe Book Application",
+      "description": "A web and mobile application for managing recipes with user authentication and favorites.",
+      "technologies": "React.js | React Native | Java Spring Boot | PostgreSQL",
+      "timeframe": "January 2024 - February 2024",
+      "images": [
+        "assets/img/portfolio/recipe-book/3-daftar-resep-web.png",
+        "assets/img/portfolio/recipe-book/2-daftar-resep.jpg",
+        "assets/img/portfolio/recipe-book/1-buku-resep-login.jpg"
+      ],
+      "hasGithub": false
+    },
+    {
+      "title": "Emosync - Spotify Playlist Recommendation based on Facial Expression",
+      "description": "A face detection system built with YOLOv8, integrated with Spotify for personalized recommendations.",
+      "technologies": "Python | Streamlit | Roboflow | Jupyter Notebook",
+      "timeframe": "November 2023 - December 2023",
+      "images": [
+        "assets/img/portfolio/yolov8-spotify/3-webcam-happy-detected.png",
+        "assets/img/portfolio/yolov8-spotify/1-emosync.png",
+        "assets/img/portfolio/yolov8-spotify/2-webcam-happy.png",
+        "assets/img/portfolio/yolov8-spotify/4-webcam-sad-detected.png"
+      ],
+      "hasGithub": false
+    },
+    {
+      "title": "SpendWise - PWA Budgeting and Recap App",
+      "description": "A Progressive Web App for personal financial management.",
+      "technologies": "PostgreSQL | ExpressJS | ReactJS | Chakra UI",
+      "timeframe": "October 2023 - December 2023",
+      "images": [
+        "assets/img/portfolio/spendwise-pwa/3-dashboard.png",
+        "assets/img/portfolio/spendwise-pwa/1-sign-in.png",
+        "assets/img/portfolio/spendwise-pwa/2-register.png",
+        "assets/img/portfolio/spendwise-pwa/4-add-wallet.png",
+        "assets/img/portfolio/spendwise-pwa/5-category.png",
+        "assets/img/portfolio/spendwise-pwa/6-add-category.png",
+        "assets/img/portfolio/spendwise-pwa/7-budget.png",
+        "assets/img/portfolio/spendwise-pwa/8-add-budget.png",
+        "assets/img/portfolio/spendwise-pwa/9-add-income.png",
+        "assets/img/portfolio/spendwise-pwa/10-add-expense.png",
+        "assets/img/portfolio/spendwise-pwa/11-recap.png",
+        "assets/img/portfolio/spendwise-pwa/12-report.png"
+      ],
+      "hasGithub": true,
+      "github": "https://github.com/frddyy/budgeting-recap-app"
+    },
+    {
+      "title": "Tiktics - Influencer Recommendation System",
+      "description": "An information system for recommending influencers using social media analytics.",
+      "technologies": "Python | Selenium | MongoDB | Flask | ReactJS",
+      "timeframe": "August 2023 - December 2023",
+      "images": [
+        "assets/img/portfolio/influencer-recommendation/3-dashboard.png",
+        "assets/img/portfolio/influencer-recommendation/1-register.png",
+        "assets/img/portfolio/influencer-recommendation/2-login.png",
+        "assets/img/portfolio/influencer-recommendation/4-search.png",
+        "assets/img/portfolio/influencer-recommendation/5-top-content.png",
+        "assets/img/portfolio/influencer-recommendation/6-top-influencer.png",
+        "assets/img/portfolio/influencer-recommendation/7-content-details.png",
+        "assets/img/portfolio/influencer-recommendation/8-influencer-details.png",
+        "assets/img/portfolio/influencer-recommendation/9-statistic-prediction.png"
+      ],
+      "hasGithub": true,
+      "github": "https://github.com/daffaraihandika/TikTics"
+    },
+    {
+      "title": "Web-Based Digital Image Processing App",
+      "description": "A web application that processes uploaded images with grayscale, edge detection, and histogram features.",
+      "technologies": "Python | Flask | HTML | CSS | Bootstrap | JavaScript",
+      "timeframe": "September 11, 2023 - October 2, 2023",
+      "images": [
+        "assets/img/portfolio/image-processing-web/1.png",
+        "assets/img/portfolio/image-processing-web/2.png",
+        "assets/img/portfolio/image-processing-web/3.png",
+        "assets/img/portfolio/image-processing-web/4.png",
+        "assets/img/portfolio/image-processing-web/5.png"
+      ],
+      "hasGithub": true,
+      "github": "https://github.com/frddyy/DigitalImageProcessing_Web"
+    },
+    {
+      "title": "Portfolify - CV Maker and Personal Website",
+      "description": "A web app for generating CVs and creating personal websites.",
+      "technologies": "MySQL | Express.js | React.js | Material UI",
+      "timeframe": "September 2023 - October 2023",
+      "images": [
+        "assets/img/portfolio/cv-maker/1-portolify.png",
+        "assets/img/portfolio/cv-maker/2-register.png",
+        "assets/img/portfolio/cv-maker/3-login.png",
+        "assets/img/portfolio/cv-maker/4-dashboard.png",
+        "assets/img/portfolio/cv-maker/5-personal-web.png"
+      ],
+      "hasGithub": true,
+      "github": "https://github.com/username/cv"
+    },
+    {
+      "title": "The Themit of Kliwon - Horror Game",
+      "description": "A 3D horror game developed using Unreal Engine, Blender 3D, and SketchUp.",
+      "technologies": "Unreal Engine 5 | Blender 3D | SketchUp Pro 2023",
+      "timeframe": "May 3, 2023 - May 22, 2023",
+      "images": [
+        "assets/img/portfolio/horror-game/1-menu.png",
+        "assets/img/portfolio/horror-game/2-scene-awal.png",
+        "assets/img/portfolio/horror-game/3-scene-rumah.png",
+        "assets/img/portfolio/horror-game/4-scene-cari-buhul.png",
+        "assets/img/portfolio/horror-game/5-scene-jumpscare.png",
+        "assets/img/portfolio/horror-game/6-scene-vs-setan.png",
+        "assets/img/portfolio/horror-game/7-scene-attack.png",
+        "assets/img/portfolio/horror-game/8-scene-setan-weak.png",
+        "assets/img/portfolio/horror-game/9-scene-akhir.png"
+      ],
+      "hasGithub": false
+    }
+  ],
+  "testimonial": [
+    {
+      "name": "Sara Smith",
+      "role": "Client",
+      "img": "assets/img/testimonial1.jpg",
+      "rating": 5,
+      "comment": "I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day."
+    },
+    {
+      "name": "Matt Robinson",
+      "role": "Client",
+      "img": "assets/img/testimonial2.jpg",
+      "rating": 5,
+      "comment": "I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day."
+    },
+    {
+      "name": "Raul Harris",
+      "role": "Client",
+      "img": "assets/img/testimonial3.jpg",
+      "rating": 5,
+      "comment": "I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day."
+    }
+  ],
+  "footer": {
+    "title": "Ferdy",
+    "subtitle": "Web & Mobile App Developer",
+    "links": [
+      { "text": "Services", "link": "#services" },
+      { "text": "Portfolio", "link": "#portfolio" },
+      { "text": "Contact Me", "link": "#contact" }
+    ],
+    "socials": [
+      {
+        "icon": "uil uil-linkedin-alt",
+        "link": "https://www.linkedin.com/in/mochamad-ferdy-fauzan"
+      },
+      {
+        "icon": "uil uil-instagram",
+        "link": "https://www.instagram.com/ferdf_"
+      },
+      { "icon": "uil uil-github-alt", "link": "https://github.com/frddyy" }
+    ],
+    "copy": "&#169; 2024 Ferdy. All rights reserved"
+  }
+}

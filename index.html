@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Devicon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <title>Ferdy's Portfolio</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo" id="nav-logo"></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid" id="nav-list"></ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social" id="home-social"></div>
+            <div class="home-img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    id="home-img"
+                    x="12"
+                    y="18"
+                    xlink:href=""
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title" id="home-title"></h1>
+              <h3 class="home__subtitle" id="home-subtitle"></h3>
+              <p class="home__description" id="home-description"></p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+        <div class="about__container container grid">
+          <img id="about-img" src="" alt="" class="about__img" />
+          <div class="about__data">
+            <p id="about-description" class="about__description"></p>
+            <div id="about-info" class="about__info"></div>
+            <!-- <div class="about__buttons">
+              <a id="about-cv" download="" href="" class="button button--flex">
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Technologies I work with</span>
+        <div class="skills__container container">
+          <div class="skills__grid" id="skills-grid"></div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <!-- <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            ==================== QUALIFICATION CONTENT 1 ====================
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              ==================== QUALIFICATION 1 ====================
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">Peru - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              ==================== QUALIFICATION 2 ====================
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Web Design</h3>
+                  <span class="qualification__subtitle">Spain - Institue</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+              </div>
+
+              ==================== QUALIFICATION 3 ====================
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">Peru - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              ==================== QUALIFICATION 4 ====================
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">Peru - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            ==================== QUALIFICATION CONTENT 2 ====================
+            <div class="qualification__content" data-content id="work">
+              ==================== QUALIFICATION 1 ====================
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">Peru - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              ==================== QUALIFICATION 2 ====================
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Web Design</h3>
+                  <span class="qualification__subtitle">Spain - Institue</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+              </div>
+
+              ==================== QUALIFICATION 3 ====================
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">Peru - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I offer</span>
+        <div
+          class="services__container container grid"
+          id="services-content"
+        ></div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <!-- <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+        <div
+          class="portfolio__container container swiper-container"
+          id="portfolio-content"
+        >
+          <div class="swiper-wrapper" id="portfolio-items"></div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper" id="portfolio-items">
+            <!-- Isi akan dimuat dari JS -->
+          </div>
+
+          <!-- Swiper Navigation -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- Swiper Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="portfolio-modal" class="portfolio__modal">
+          <div class="portfolio__modal-content">
+            <span id="close-modal" class="portfolio__modal-close">&times;</span>
+            <div class="modal-swiper-container swiper-container">
+              <div id="modal-images" class="swiper-wrapper"></div>
+              <div class="swiper-button-next swiper-modal-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+              </div>
+              <div class="swiper-button-prev swiper-modal-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+              </div>
+              <div class="swiper-pagination swiper-modal-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECT IN MIND ====================-->
+      <!-- <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">You have a new project</h2>
+              <p class="project__description">
+                Contact me now and get a 30% discount
+              </p>
+              <a href="#contact" class="button button--flex button--white">
+                Contact Me
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img src="assets/img/project.png" alt="" class="project__img" />
+          </div>
+        </div>
+      </section> -->
+
+      <!--==================== TESTIMONIAL ====================-->
+      <!-- <section class="testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">My client saying</span>
+        <div class="testimonial__container container swiper-container">
+          <div class="swiper-wrapper"> -->
+      <!-- Testimonial content will be loaded here dynamically -->
+      <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+
+      <!-- ==================== CONTACT ME ====================
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__ti5le">Call Me</h3>
+                <span class="contact__subtitle">999-777-666</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__ti5le">Email</h3>
+                <span class="contact__subtitle">m.ferdyfauzan@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__ti5le">Location</h3>
+                <span class="contact__subtitle">Bandung</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Project</label>
+              <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section> -->
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">m.ferdyfauzan@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Bandung</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulir Kontak -->
+          <form class="contact__form grid" onsubmit="generateMailto(event)">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="name" class="contact__label">Name</label>
+                <input type="text" id="name" class="contact__input" required />
+              </div>
+              <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="project" class="contact__label">Project</label>
+              <input type="text" id="project" class="contact__input" required />
+            </div>
+            <div class="contact__content">
+              <label for="message" class="contact__label">Message</label>
+              <textarea
+                id="message"
+                cols="0"
+                rows="7"
+                class="contact__input"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title" id="footer-title"></h1>
+            <span class="footer__subtitle" id="footer-subtitle"></span>
+          </div>
+          <ul class="footer__links" id="footer-links"></ul>
+          <div class="footer__socials" id="footer-socials"></div>
+        </div>
+        <p class="footer__copy" id="footer-copy"></p>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up"
+      ><i class="uil uil-arrow-up scrollup__icon"></i
+    ></a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!--==================== SMTP JS ====================-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
