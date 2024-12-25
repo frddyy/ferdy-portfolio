@@ -494,9 +494,7 @@ async function loadContent() {
             openModal(project.images);
           });
         }
-
       });
-
 
       // Open Modal Function
       function openModal(images) {
@@ -527,7 +525,7 @@ async function loadContent() {
 
       // Close Modal
       closeModal.addEventListener("click", () => {
-        modal.classList.remove("show")
+        modal.classList.remove("show");
       });
 
       window.addEventListener("click", (e) => {
@@ -666,9 +664,10 @@ function initializeSkillsSlider() {
     slider.addEventListener("scroll", () => {
       userInteracted = true;
       setTimeout(() => {
-        userInteracted = false; // Reset setelah 1 detik
-      }, 1000);
+        userInteracted = false;
+      }, 300); // Kurangi delay menjadi 300ms
     });
+
 
     function scrollAnimation() {
       if (!isAtEnd) {
@@ -683,8 +682,9 @@ function initializeSkillsSlider() {
         isAtEnd = false;
       }
 
-      requestAnimationFrame(scrollAnimation);
+      requestAnimationFrame(() => scrollAnimation());
     }
+
 
     scrollAnimation();
   });
