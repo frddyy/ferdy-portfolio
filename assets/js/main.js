@@ -656,39 +656,47 @@ function initializeSkillsSlider() {
   const sliders = document.querySelectorAll(".skills__items");
 
   sliders.forEach((slider) => {
-    let scrollAmount = 2;
-    let isAtEnd = false;
-    let userInteracted = false; // Menandakan apakah pengguna berinteraksi
+    let scrollAmount = 2; // Kecepatan scroll
+    let isHoveredOrTouched = false; // Menandakan apakah pengguna berinteraksi
 
-    // Deteksi scroll manual oleh pengguna
-    slider.addEventListener("scroll", () => {
-      userInteracted = true;
-      setTimeout(() => {
-        userInteracted = false;
-      }, 300); // Kurangi delay menjadi 300ms
+    // Duplikasi elemen untuk menciptakan efek loop
+    const items = Array.from(slider.children);
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      slider.appendChild(clone);
     });
 
+    // Deteksi hover (desktop) atau touch (mobile)
+    slider.addEventListener("mouseenter", () => {
+      isHoveredOrTouched = true;
+    });
+    slider.addEventListener("mouseleave", () => {
+      isHoveredOrTouched = false;
+    });
+    slider.addEventListener("touchstart", () => {
+      isHoveredOrTouched = true;
+    });
+    slider.addEventListener("touchend", () => {
+      isHoveredOrTouched = false;
+    });
 
     function scrollAnimation() {
-      if (!isAtEnd) {
+      if (!isHoveredOrTouched) {
         slider.scrollLeft += scrollAmount;
-      } else {
-        slider.scrollLeft -= scrollAmount;
+
+        // Jika scroll mencapai akhir elemen asli
+        if (slider.scrollLeft >= slider.scrollWidth / 2) {
+          slider.scrollLeft = 0; // Reset ke awal tanpa jeda
+        }
       }
 
-      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-        isAtEnd = true;
-      } else if (slider.scrollLeft <= 0) {
-        isAtEnd = false;
-      }
-
-      requestAnimationFrame(() => scrollAnimation());
+      requestAnimationFrame(scrollAnimation); // Lanjutkan animasi
     }
-
 
     scrollAnimation();
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", loadContent);
 
