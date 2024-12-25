@@ -660,6 +660,15 @@ function initializeSkillsSlider() {
   sliders.forEach((slider) => {
     let scrollAmount = 2;
     let isAtEnd = false;
+    let userInteracted = false; // Menandakan apakah pengguna berinteraksi
+
+    // Deteksi scroll manual oleh pengguna
+    slider.addEventListener("scroll", () => {
+      userInteracted = true;
+      setTimeout(() => {
+        userInteracted = false; // Reset setelah 1 detik
+      }, 1000);
+    });
 
     function scrollAnimation() {
       if (!isAtEnd) {

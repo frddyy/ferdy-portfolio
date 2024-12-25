@@ -496,6 +496,8 @@ img {
   justify-content: center; /* Center vertical */
   align-items: center; /* Center horizontal */
   gap: 0.5rem; /* Beri jarak antara icon dan teks */
+  scroll-snap-align: start; /* Untuk menahan posisi elemen pada scroll */
+  transition: transform 0.3s ease-in-out; /* Transisi fallback */
 }
 
 .skills__item:hover {
