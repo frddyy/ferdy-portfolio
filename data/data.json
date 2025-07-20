@@ -151,6 +151,24 @@
   ],
   "portfolio": [
     {
+      "title": "Podface - AI Video Podcast Generator",
+      "description": "An AI-powered desktop application that automatically generates a video podcast from an audio file by creating 3D speech-driven facial animations. This was my final thesis project.",
+      "technologies": "Python | React | Electron.js | SpeechBrain | Seed-VC | MICA | VOCA",
+      "timeframe": "February 2025 - June 2025",
+      "images": [
+        "assets/img/portfolio/podface/1.png",
+        "assets/img/portfolio/podface/2.png",
+        "assets/img/portfolio/podface/3.png",
+        "assets/img/portfolio/podface/4.png",
+        "assets/img/portfolio/podface/5.png",
+        "assets/img/portfolio/podface/6.png",
+        "assets/img/portfolio/podface/7.png",
+        "assets/img/portfolio/podface/8.png"
+      ],
+      "hasGithub": true,
+      "github": "https://github.com/frddyy/podface-electron.git"
+    },
+    {
       "title": "Presence App - Attendance System",
       "description": "A real-time attendance system with check-in/out and leave application features.",
       "technologies": "React | React Native | Java Spring Boot | PostgreSQL | Redux",
