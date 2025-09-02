@@ -94,9 +94,9 @@
   "qualification": {
     "education": [
       {
-        "title": "Applied Bachelor of Informatics Engineering",
+        "title": "Bachelor of Applied Science in Informatics Engineering",
         "subtitle": "Politeknik Negeri Bandung",
-        "calendar": "2021 - Present"
+        "calendar": "2021 - 2025"
       },
       {
         "title": "Senior High School",
@@ -106,12 +106,12 @@
     ],
     "work": [
       {
-        "title": "Full Stack Developer",
+        "title": "System Analyst & Fullstack Developer (Internship)",
         "subtitle": "PT Padepokan Tujuh Sembilan",
         "calendar": "Jun 2024 - Oct 2024"
       },
       {
-        "title": "Frontend Developer",
+        "title": "Frontend & Mobile Developer (Freelance)",
         "subtitle": "PT Padepokan Tujuh Sembilan",
         "calendar": "Jan 2024 - Feb 2024"
       }
@@ -185,6 +185,21 @@
         "assets/img/portfolio/presence-app/8-all-admin-superadmin.png",
         "assets/img/portfolio/presence-app/9-all-company.png",
         "assets/img/portfolio/presence-app/10-company-profile.png"
+      ],
+      "hasGithub": false
+    },
+    {
+      "title": "KWP Syariah Digital Platform",
+      "description": "Developed a cooperative information system for KWP Syariah including member management, savings, and financing modules.",
+      "technologies": "Vue.js | Laravel | PHP | MySQL",
+      "timeframe": "June 2024 - October 2024",
+      "images": [
+        "assets/img/portfolio/kwp-app/kwp.png",
+        "assets/img/portfolio/kwp-app/kwp2.png",
+        "assets/img/portfolio/kwp-app/kwp3.png",
+        "assets/img/portfolio/kwp-app/kwp4.png",
+        "assets/img/portfolio/kwp-app/kwp5.png",
+        "assets/img/portfolio/kwp-app/kwp6.png"
       ],
       "hasGithub": false
     },
